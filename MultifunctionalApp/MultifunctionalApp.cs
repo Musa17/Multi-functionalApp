@@ -16,5 +16,10 @@ namespace MultifunctionalApp
         {
             InitializeComponent();
         }
+
+        private void musicPlayerButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
