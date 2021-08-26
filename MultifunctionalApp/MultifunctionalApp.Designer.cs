@@ -52,7 +52,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 332);
             this.Controls.Add(this.musicPlayerButton);
+            this.MaximizeBox = false;
             this.Name = "MultifunctionalApp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Multi-functional App";
             this.ResumeLayout(false);
 

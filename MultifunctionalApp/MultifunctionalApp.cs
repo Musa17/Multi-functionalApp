@@ -19,7 +19,9 @@ namespace MultifunctionalApp
 
         private void musicPlayerButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MusicPlayerApp mp = new MusicPlayerApp();
+            mp.Show();
         }
     }
 }
