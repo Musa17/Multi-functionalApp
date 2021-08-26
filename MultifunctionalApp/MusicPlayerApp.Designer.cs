@@ -85,6 +85,7 @@
             this.songsListBox.Name = "songsListBox";
             this.songsListBox.Size = new System.Drawing.Size(200, 228);
             this.songsListBox.TabIndex = 1;
+            this.songsListBox.SelectedIndexChanged += new System.EventHandler(this.songsListBox_SelectedIndexChanged);
             // 
             // selectSongsButton
             // 
@@ -99,6 +100,7 @@
             this.selectSongsButton.TabIndex = 2;
             this.selectSongsButton.Text = "Select songs";
             this.selectSongsButton.UseVisualStyleBackColor = false;
+            this.selectSongsButton.Click += new System.EventHandler(this.selectSongsButton_Click);
             // 
             // axWindowsMediaPlayer
             // 
