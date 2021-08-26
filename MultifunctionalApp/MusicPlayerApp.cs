@@ -24,7 +24,6 @@ namespace MultifunctionalApp
             OpenFileDialog ofd = new OpenFileDialog();
 
             ofd.Multiselect = true;
-            ofd.Filter = "All Supported Audio | *.mp3; *.wma | MP3s | *.mp3 | WMAs | *.wma";
 
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
