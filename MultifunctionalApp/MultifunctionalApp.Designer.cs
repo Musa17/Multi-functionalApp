@@ -31,6 +31,7 @@
             this.musicPlayerButton = new System.Windows.Forms.Button();
             this.drawingAppButton = new System.Windows.Forms.Button();
             this.carRacingGameButton = new System.Windows.Forms.Button();
+            this.digitalClockButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // musicPlayerButton
@@ -78,11 +79,27 @@
             this.carRacingGameButton.UseVisualStyleBackColor = false;
             this.carRacingGameButton.Click += new System.EventHandler(this.carRacingGameButton_Click);
             // 
+            // digitalClockButton
+            // 
+            this.digitalClockButton.BackColor = System.Drawing.Color.ForestGreen;
+            this.digitalClockButton.FlatAppearance.BorderSize = 0;
+            this.digitalClockButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.digitalClockButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.digitalClockButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.digitalClockButton.Location = new System.Drawing.Point(286, 173);
+            this.digitalClockButton.Name = "digitalClockButton";
+            this.digitalClockButton.Size = new System.Drawing.Size(150, 150);
+            this.digitalClockButton.TabIndex = 3;
+            this.digitalClockButton.Text = "Digital Clock";
+            this.digitalClockButton.UseVisualStyleBackColor = false;
+            this.digitalClockButton.Click += new System.EventHandler(this.digitalClockButton_Click);
+            // 
             // MultifunctionalApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 332);
+            this.Controls.Add(this.digitalClockButton);
             this.Controls.Add(this.carRacingGameButton);
             this.Controls.Add(this.drawingAppButton);
             this.Controls.Add(this.musicPlayerButton);
@@ -99,6 +116,7 @@
         private System.Windows.Forms.Button musicPlayerButton;
         private System.Windows.Forms.Button drawingAppButton;
         private System.Windows.Forms.Button carRacingGameButton;
+        private System.Windows.Forms.Button digitalClockButton;
     }
 }
 

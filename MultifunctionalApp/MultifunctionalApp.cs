@@ -37,5 +37,10 @@ namespace MultifunctionalApp
             CarRacingGame mp = new CarRacingGame();
             mp.Show();
         }
+
+        private void digitalClockButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
