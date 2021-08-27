@@ -111,7 +111,7 @@
             // 
             this.car.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("car.BackgroundImage")));
             this.car.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.car.Location = new System.Drawing.Point(72, 349);
+            this.car.Location = new System.Drawing.Point(72, 340);
             this.car.Name = "car";
             this.car.Size = new System.Drawing.Size(58, 100);
             this.car.TabIndex = 6;

@@ -12,6 +12,8 @@ namespace MultifunctionalApp
 {
     public partial class CarRacingGame : Form
     {
+        int gameSpeed = 0;
+
         public CarRacingGame()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace MultifunctionalApp
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            moveLine(5);
+            moveLine(gameSpeed);
         }
 
         void moveLine(int speed)
@@ -83,6 +85,22 @@ namespace MultifunctionalApp
                 if (car.Right < 360)
                 {
                     car.Left += 8;
+                }
+            }
+
+            if (e.KeyCode == Keys.Up)
+            {
+                if (gameSpeed < 21)
+                {
+                    gameSpeed++;
+                }
+            }
+
+            if (e.KeyCode == Keys.Down)
+            {
+                if (gameSpeed > 0)
+                {
+                    gameSpeed--;
                 }
             }
         }
