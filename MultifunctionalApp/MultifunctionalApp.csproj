@@ -66,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DrawingApp.resx">
+      <DependentUpon>DrawingApp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MultifunctionalApp.resx">
       <DependentUpon>MultifunctionalApp.cs</DependentUpon>
     </EmbeddedResource>
