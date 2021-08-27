@@ -23,5 +23,10 @@ namespace MultifunctionalApp
             MusicPlayerApp mp = new MusicPlayerApp();
             mp.Show();
         }
+
+        private void drawingAppButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
