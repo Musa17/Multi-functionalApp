@@ -67,5 +67,24 @@ namespace MultifunctionalApp
                 pictureBox4.Top += speed;
             }
         }
+
+        private void CarRacingGame_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left)
+            {
+                if (car.Left > 30)
+                {
+                    car.Left += -8;
+                }
+            }
+
+            if (e.KeyCode == Keys.Right)
+            {
+                if (car.Right < 360)
+                {
+                    car.Left += 8;
+                }
+            }
+        }
     }
 }
