@@ -14,6 +14,10 @@ namespace MultifunctionalApp
     {
         int gameSpeed = 0;
 
+        Random r = new Random();
+
+        int x, y;
+
         public CarRacingGame()
         {
             InitializeComponent();
@@ -22,6 +26,48 @@ namespace MultifunctionalApp
         private void timer_Tick(object sender, EventArgs e)
         {
             moveLine(gameSpeed);
+            moveEnemy(gameSpeed);
+        }
+
+        void moveEnemy(int speed)
+        {
+            if (enemy1.Top > 500)
+            {
+                x = r.Next(0, 170);
+
+                enemy1.Location = new Point(x, 0);
+            }
+
+            else
+            {
+                enemy1.Top += speed;
+            }
+
+
+            if (enemy2.Top > 500)
+            {
+                x = r.Next(180, 200);
+
+                enemy2.Location = new Point(x, 0);
+            }
+
+            else
+            {
+                enemy2.Top += speed;
+            }
+
+
+            if (enemy3.Top > 500)
+            {
+                x = r.Next(200, 350);
+
+                enemy3.Location = new Point(x, 0);
+            }
+
+            else
+            {
+                enemy3.Top += speed;
+            }
         }
 
         void moveLine(int speed)
