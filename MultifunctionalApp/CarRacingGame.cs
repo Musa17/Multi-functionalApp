@@ -13,10 +13,10 @@ namespace MultifunctionalApp
     public partial class CarRacingGame : Form
     {
         int gameSpeed = 0;
+        int x;
+        int collectedCoins = 0;
 
         Random r = new Random();
-
-        int x;
 
         bool isGameOver = false;
 
@@ -30,6 +30,8 @@ namespace MultifunctionalApp
         {
             moveLine(gameSpeed);
             moveEnemy(gameSpeed);
+            moveCoin(gameSpeed);
+            coinCollection();
             gameOver();
         }
 
@@ -71,6 +73,60 @@ namespace MultifunctionalApp
             else
             {
                 enemy3.Top += speed;
+            }
+        }
+
+        void moveCoin(int speed)
+        {
+            if (coin1.Top > 500)
+            {
+                x = r.Next(50, 130);
+
+                coin1.Location = new Point(x, 0);
+            }
+
+            else
+            {
+                coin1.Top += speed;
+            }
+
+
+            if (coin2.Top > 500)
+            {
+                x = r.Next(150, 230);
+
+                coin2.Location = new Point(x, 0);
+            }
+
+            else
+            {
+                coin2.Top += speed;
+            }
+
+
+            if (coin3.Top > 500)
+            {
+                x = r.Next(250, 300);
+
+                coin3.Location = new Point(x, 0);
+            }
+
+            else
+            {
+                coin3.Top += speed;
+            }
+
+
+            if (coin4.Top > 500)
+            {
+                x = r.Next(310, 360);
+
+                coin4.Location = new Point(x, 0);
+            }
+
+            else
+            {
+                coin4.Top += speed;
             }
         }
 
@@ -179,6 +235,45 @@ namespace MultifunctionalApp
                         gameSpeed--;
                     }
                 }
+            }
+        }
+
+        void coinCollection()
+        {
+            if (car.Bounds.IntersectsWith(coin1.Bounds))
+            {
+                collectedCoins++;
+                resultLabel.Text = "Coins: " + collectedCoins.ToString();
+
+                x = r.Next(50, 130);
+                coin1.Location = new Point(x, 0);
+            }
+
+            if (car.Bounds.IntersectsWith(coin2.Bounds))
+            {
+                collectedCoins++;
+                resultLabel.Text = "Coins: " + collectedCoins.ToString();
+
+                x = r.Next(150, 230);
+                coin2.Location = new Point(x, 0);
+            }
+
+            if (car.Bounds.IntersectsWith(coin3.Bounds))
+            {
+                collectedCoins++;
+                resultLabel.Text = "Coins: " + collectedCoins.ToString();
+
+                x = r.Next(250, 300);
+                coin3.Location = new Point(x, 0);
+            }
+
+            if (car.Bounds.IntersectsWith(coin4.Bounds))
+            {
+                collectedCoins++;
+                resultLabel.Text = "Coins: " + collectedCoins.ToString();
+
+                x = r.Next(310, 360);
+                coin4.Location = new Point(x, 0);
             }
         }
     }

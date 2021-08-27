@@ -43,6 +43,12 @@
             this.enemy3 = new System.Windows.Forms.PictureBox();
             this.gameOverLabel = new System.Windows.Forms.Label();
             this.gameOverPanel = new System.Windows.Forms.Panel();
+            this.coin4 = new System.Windows.Forms.PictureBox();
+            this.coin2 = new System.Windows.Forms.PictureBox();
+            this.coin3 = new System.Windows.Forms.PictureBox();
+            this.coin1 = new System.Windows.Forms.PictureBox();
+            this.resultPanel = new System.Windows.Forms.Panel();
+            this.resultLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -54,6 +60,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy3)).BeginInit();
             this.gameOverPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin1)).BeginInit();
+            this.resultPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -118,6 +129,7 @@
             // 
             // car
             // 
+            this.car.BackColor = System.Drawing.Color.Transparent;
             this.car.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("car.BackgroundImage")));
             this.car.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.car.Location = new System.Drawing.Point(72, 340);
@@ -128,6 +140,7 @@
             // 
             // enemy1
             // 
+            this.enemy1.BackColor = System.Drawing.Color.Transparent;
             this.enemy1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("enemy1.BackgroundImage")));
             this.enemy1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.enemy1.Location = new System.Drawing.Point(34, 78);
@@ -138,6 +151,7 @@
             // 
             // enemy2
             // 
+            this.enemy2.BackColor = System.Drawing.Color.Transparent;
             this.enemy2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("enemy2.BackgroundImage")));
             this.enemy2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.enemy2.Location = new System.Drawing.Point(222, 31);
@@ -148,6 +162,7 @@
             // 
             // enemy3
             // 
+            this.enemy3.BackColor = System.Drawing.Color.Transparent;
             this.enemy3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("enemy3.BackgroundImage")));
             this.enemy3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.enemy3.Location = new System.Drawing.Point(305, 173);
@@ -172,10 +187,77 @@
             // 
             this.gameOverPanel.BackColor = System.Drawing.Color.Black;
             this.gameOverPanel.Controls.Add(this.gameOverLabel);
-            this.gameOverPanel.Location = new System.Drawing.Point(-8, 98);
+            this.gameOverPanel.Location = new System.Drawing.Point(-8, 134);
             this.gameOverPanel.Name = "gameOverPanel";
             this.gameOverPanel.Size = new System.Drawing.Size(400, 100);
             this.gameOverPanel.TabIndex = 11;
+            // 
+            // coin4
+            // 
+            this.coin4.BackColor = System.Drawing.Color.Transparent;
+            this.coin4.Image = ((System.Drawing.Image)(resources.GetObject("coin4.Image")));
+            this.coin4.Location = new System.Drawing.Point(281, 280);
+            this.coin4.Name = "coin4";
+            this.coin4.Size = new System.Drawing.Size(30, 30);
+            this.coin4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin4.TabIndex = 12;
+            this.coin4.TabStop = false;
+            // 
+            // coin2
+            // 
+            this.coin2.BackColor = System.Drawing.Color.Transparent;
+            this.coin2.Image = ((System.Drawing.Image)(resources.GetObject("coin2.Image")));
+            this.coin2.Location = new System.Drawing.Point(295, 62);
+            this.coin2.Name = "coin2";
+            this.coin2.Size = new System.Drawing.Size(30, 30);
+            this.coin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin2.TabIndex = 12;
+            this.coin2.TabStop = false;
+            // 
+            // coin3
+            // 
+            this.coin3.BackColor = System.Drawing.Color.Transparent;
+            this.coin3.Image = ((System.Drawing.Image)(resources.GetObject("coin3.Image")));
+            this.coin3.Location = new System.Drawing.Point(104, 230);
+            this.coin3.Name = "coin3";
+            this.coin3.Size = new System.Drawing.Size(30, 30);
+            this.coin3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin3.TabIndex = 12;
+            this.coin3.TabStop = false;
+            // 
+            // coin1
+            // 
+            this.coin1.BackColor = System.Drawing.Color.Transparent;
+            this.coin1.Image = ((System.Drawing.Image)(resources.GetObject("coin1.Image")));
+            this.coin1.Location = new System.Drawing.Point(118, 12);
+            this.coin1.Name = "coin1";
+            this.coin1.Size = new System.Drawing.Size(30, 30);
+            this.coin1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.coin1.TabIndex = 12;
+            this.coin1.TabStop = false;
+            // 
+            // resultPanel
+            // 
+            this.resultPanel.BackColor = System.Drawing.Color.Black;
+            this.resultPanel.Controls.Add(this.resultLabel);
+            this.resultPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.resultPanel.Location = new System.Drawing.Point(-8, 0);
+            this.resultPanel.Name = "resultPanel";
+            this.resultPanel.Size = new System.Drawing.Size(400, 30);
+            this.resultPanel.TabIndex = 12;
+            // 
+            // resultLabel
+            // 
+            this.resultLabel.AutoSize = true;
+            this.resultLabel.BackColor = System.Drawing.Color.Black;
+            this.resultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.resultLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.resultLabel.Location = new System.Drawing.Point(21, 5);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(74, 20);
+            this.resultLabel.TabIndex = 10;
+            this.resultLabel.Text = "Coins: 0";
+            this.resultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // CarRacingGame
             // 
@@ -183,7 +265,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.resultPanel);
             this.Controls.Add(this.gameOverPanel);
+            this.Controls.Add(this.coin1);
+            this.Controls.Add(this.coin3);
+            this.Controls.Add(this.coin2);
+            this.Controls.Add(this.coin4);
             this.Controls.Add(this.enemy3);
             this.Controls.Add(this.enemy2);
             this.Controls.Add(this.enemy1);
@@ -211,6 +298,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.enemy3)).EndInit();
             this.gameOverPanel.ResumeLayout(false);
             this.gameOverPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin1)).EndInit();
+            this.resultPanel.ResumeLayout(false);
+            this.resultPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +323,11 @@
         private System.Windows.Forms.PictureBox enemy3;
         private System.Windows.Forms.Label gameOverLabel;
         private System.Windows.Forms.Panel gameOverPanel;
+        private System.Windows.Forms.PictureBox coin4;
+        private System.Windows.Forms.PictureBox coin2;
+        private System.Windows.Forms.PictureBox coin3;
+        private System.Windows.Forms.PictureBox coin1;
+        private System.Windows.Forms.Panel resultPanel;
+        private System.Windows.Forms.Label resultLabel;
     }
 }
