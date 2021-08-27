@@ -16,17 +16,21 @@ namespace MultifunctionalApp
 
         Random r = new Random();
 
-        int x, y;
+        int x;
+
+        bool isGameOver = false;
 
         public CarRacingGame()
         {
             InitializeComponent();
+            gameOverPanel.Visible = false;
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
             moveLine(gameSpeed);
             moveEnemy(gameSpeed);
+            gameOver();
         }
 
         void moveEnemy(int speed)
@@ -67,6 +71,30 @@ namespace MultifunctionalApp
             else
             {
                 enemy3.Top += speed;
+            }
+        }
+
+        void gameOver()
+        {
+            if (car.Bounds.IntersectsWith(enemy1.Bounds))
+            {
+                timer.Enabled = false;
+                gameOverPanel.Visible = true;
+                isGameOver = true;
+            }
+
+            if (car.Bounds.IntersectsWith(enemy2.Bounds))
+            {
+                timer.Enabled = false;
+                gameOverPanel.Visible = true;
+                isGameOver = true;
+            }
+
+            if (car.Bounds.IntersectsWith(enemy3.Bounds))
+            {
+                timer.Enabled = false;
+                gameOverPanel.Visible = true;
+                isGameOver = true;
             }
         }
 
@@ -118,35 +146,38 @@ namespace MultifunctionalApp
 
         private void CarRacingGame_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
+            if (!isGameOver)
             {
-                if (car.Left > 30)
+                if (e.KeyCode == Keys.Left)
                 {
-                    car.Left += -8;
+                    if (car.Left > 30)
+                    {
+                        car.Left += -8;
+                    }
                 }
-            }
 
-            if (e.KeyCode == Keys.Right)
-            {
-                if (car.Right < 360)
+                if (e.KeyCode == Keys.Right)
                 {
-                    car.Left += 8;
+                    if (car.Right < 360)
+                    {
+                        car.Left += 8;
+                    }
                 }
-            }
 
-            if (e.KeyCode == Keys.Up)
-            {
-                if (gameSpeed < 21)
+                if (e.KeyCode == Keys.Up)
                 {
-                    gameSpeed++;
+                    if (gameSpeed < 21)
+                    {
+                        gameSpeed++;
+                    }
                 }
-            }
 
-            if (e.KeyCode == Keys.Down)
-            {
-                if (gameSpeed > 0)
+                if (e.KeyCode == Keys.Down)
                 {
-                    gameSpeed--;
+                    if (gameSpeed > 0)
+                    {
+                        gameSpeed--;
+                    }
                 }
             }
         }

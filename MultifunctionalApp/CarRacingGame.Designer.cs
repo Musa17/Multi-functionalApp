@@ -41,6 +41,8 @@
             this.enemy1 = new System.Windows.Forms.PictureBox();
             this.enemy2 = new System.Windows.Forms.PictureBox();
             this.enemy3 = new System.Windows.Forms.PictureBox();
+            this.gameOverLabel = new System.Windows.Forms.Label();
+            this.gameOverPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,6 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.enemy1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy3)).BeginInit();
+            this.gameOverPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -153,12 +156,34 @@
             this.enemy3.TabIndex = 9;
             this.enemy3.TabStop = false;
             // 
+            // gameOverLabel
+            // 
+            this.gameOverLabel.AutoSize = true;
+            this.gameOverLabel.BackColor = System.Drawing.Color.Black;
+            this.gameOverLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gameOverLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gameOverLabel.Location = new System.Drawing.Point(105, 32);
+            this.gameOverLabel.Name = "gameOverLabel";
+            this.gameOverLabel.Size = new System.Drawing.Size(190, 37);
+            this.gameOverLabel.TabIndex = 10;
+            this.gameOverLabel.Text = "Game Over";
+            // 
+            // gameOverPanel
+            // 
+            this.gameOverPanel.BackColor = System.Drawing.Color.Black;
+            this.gameOverPanel.Controls.Add(this.gameOverLabel);
+            this.gameOverPanel.Location = new System.Drawing.Point(-8, 98);
+            this.gameOverPanel.Name = "gameOverPanel";
+            this.gameOverPanel.Size = new System.Drawing.Size(400, 100);
+            this.gameOverPanel.TabIndex = 11;
+            // 
             // CarRacingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.gameOverPanel);
             this.Controls.Add(this.enemy3);
             this.Controls.Add(this.enemy2);
             this.Controls.Add(this.enemy1);
@@ -184,6 +209,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.enemy1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy3)).EndInit();
+            this.gameOverPanel.ResumeLayout(false);
+            this.gameOverPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -201,5 +228,7 @@
         private System.Windows.Forms.PictureBox enemy1;
         private System.Windows.Forms.PictureBox enemy2;
         private System.Windows.Forms.PictureBox enemy3;
+        private System.Windows.Forms.Label gameOverLabel;
+        private System.Windows.Forms.Panel gameOverPanel;
     }
 }
