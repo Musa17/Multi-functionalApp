@@ -52,6 +52,12 @@
     <Compile Include="CarRacingGame.Designer.cs">
       <DependentUpon>CarRacingGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="DigitalClock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigitalClock.Designer.cs">
+      <DependentUpon>DigitalClock.cs</DependentUpon>
+    </Compile>
     <Compile Include="DrawingApp.cs">
       <SubType>Form</SubType>
     </Compile>
