@@ -52,6 +52,9 @@
             this.drawingPanel.Name = "drawingPanel";
             this.drawingPanel.Size = new System.Drawing.Size(800, 414);
             this.drawingPanel.TabIndex = 0;
+            this.drawingPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseDown);
+            this.drawingPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseMove);
+            this.drawingPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.drawingPanel_MouseUp);
             // 
             // panel1
             // 
@@ -74,6 +77,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(35, 25);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -83,6 +87,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(35, 25);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
             // 
@@ -92,6 +97,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(35, 25);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox4
             // 
@@ -101,6 +107,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(35, 25);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox5
             // 
@@ -110,6 +117,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(35, 25);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // DrawingApp
             // 
