@@ -16,8 +16,7 @@ namespace MultifunctionalApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new MultifunctionalApp());
-            Application.Run(new DigitalClock());
+            Application.Run(new MultifunctionalApp());
         }
     }
 }
