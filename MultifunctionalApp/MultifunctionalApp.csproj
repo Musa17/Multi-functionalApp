@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarRacingGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarRacingGame.Designer.cs">
+      <DependentUpon>CarRacingGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="DrawingApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CarRacingGame.resx">
+      <DependentUpon>CarRacingGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DrawingApp.resx">
       <DependentUpon>DrawingApp.cs</DependentUpon>
     </EmbeddedResource>

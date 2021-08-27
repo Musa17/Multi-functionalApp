@@ -33,7 +33,9 @@ namespace MultifunctionalApp
 
         private void carRacingGameButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CarRacingGame mp = new CarRacingGame();
+            mp.Show();
         }
     }
 }
