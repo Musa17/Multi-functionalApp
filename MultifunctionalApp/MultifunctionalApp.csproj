@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CarRacingGame.resx">
+      <DependentUpon>CarRacingGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DrawingApp.resx">
       <DependentUpon>DrawingApp.cs</DependentUpon>
     </EmbeddedResource>
