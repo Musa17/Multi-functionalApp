@@ -81,6 +81,9 @@
     <EmbeddedResource Include="CarRacingGame.resx">
       <DependentUpon>CarRacingGame.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DigitalClock.resx">
+      <DependentUpon>DigitalClock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DrawingApp.resx">
       <DependentUpon>DrawingApp.cs</DependentUpon>
     </EmbeddedResource>
