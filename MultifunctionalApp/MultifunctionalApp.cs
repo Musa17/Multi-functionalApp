@@ -40,7 +40,9 @@ namespace MultifunctionalApp
 
         private void digitalClockButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            DigitalClock mp = new DigitalClock();
+            mp.Show();
         }
     }
 }
