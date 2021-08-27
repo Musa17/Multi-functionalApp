@@ -30,5 +30,10 @@ namespace MultifunctionalApp
             DrawingApp mp = new DrawingApp();
             mp.Show();
         }
+
+        private void carRacingGameButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

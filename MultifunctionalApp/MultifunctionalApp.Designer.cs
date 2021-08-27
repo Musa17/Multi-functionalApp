@@ -30,6 +30,7 @@
         {
             this.musicPlayerButton = new System.Windows.Forms.Button();
             this.drawingAppButton = new System.Windows.Forms.Button();
+            this.carRacingGameButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // musicPlayerButton
@@ -62,11 +63,27 @@
             this.drawingAppButton.UseVisualStyleBackColor = false;
             this.drawingAppButton.Click += new System.EventHandler(this.drawingAppButton_Click);
             // 
+            // carRacingGameButton
+            // 
+            this.carRacingGameButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.carRacingGameButton.FlatAppearance.BorderSize = 0;
+            this.carRacingGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.carRacingGameButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.carRacingGameButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.carRacingGameButton.Location = new System.Drawing.Point(12, 173);
+            this.carRacingGameButton.Name = "carRacingGameButton";
+            this.carRacingGameButton.Size = new System.Drawing.Size(259, 150);
+            this.carRacingGameButton.TabIndex = 2;
+            this.carRacingGameButton.Text = "Racing Game";
+            this.carRacingGameButton.UseVisualStyleBackColor = false;
+            this.carRacingGameButton.Click += new System.EventHandler(this.carRacingGameButton_Click);
+            // 
             // MultifunctionalApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 332);
+            this.Controls.Add(this.carRacingGameButton);
             this.Controls.Add(this.drawingAppButton);
             this.Controls.Add(this.musicPlayerButton);
             this.MaximizeBox = false;
@@ -81,6 +98,7 @@
 
         private System.Windows.Forms.Button musicPlayerButton;
         private System.Windows.Forms.Button drawingAppButton;
+        private System.Windows.Forms.Button carRacingGameButton;
     }
 }
 
