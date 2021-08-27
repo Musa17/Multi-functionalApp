@@ -18,13 +18,14 @@ namespace MultifunctionalApp
         int x = -1;
         int y = -1;
         bool moving = false;
+        Color color = Color.Black;
 
         public DrawingApp()
         {
             InitializeComponent();
             g = drawingPanel.CreateGraphics();
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            pen = new Pen(Color.Black, 5);
+            pen = new Pen(color, 5);
             pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
         }
 
@@ -58,6 +59,15 @@ namespace MultifunctionalApp
             moving = false;
             x = -1;
             y = -1;
+        }
+
+        private void pickColorButton_Click(object sender, EventArgs e)
+        {
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                color = colorDialog.Color;
+                pen.Color = color;
+            }
         }
     }
 }

@@ -35,6 +35,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.pickColorButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -119,11 +121,22 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pickColorButton
+            // 
+            this.pickColorButton.Location = new System.Drawing.Point(562, 7);
+            this.pickColorButton.Name = "pickColorButton";
+            this.pickColorButton.Size = new System.Drawing.Size(75, 23);
+            this.pickColorButton.TabIndex = 2;
+            this.pickColorButton.Text = "Pick color";
+            this.pickColorButton.UseVisualStyleBackColor = true;
+            this.pickColorButton.Click += new System.EventHandler(this.pickColorButton_Click);
+            // 
             // DrawingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pickColorButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.drawingPanel);
             this.Name = "DrawingApp";
@@ -147,5 +160,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.Button pickColorButton;
     }
 }
