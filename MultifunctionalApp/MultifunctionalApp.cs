@@ -26,7 +26,9 @@ namespace MultifunctionalApp
 
         private void drawingAppButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            DrawingApp mp = new DrawingApp();
+            mp.Show();
         }
     }
 }
