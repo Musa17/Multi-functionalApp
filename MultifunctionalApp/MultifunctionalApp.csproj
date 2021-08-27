@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarRacingGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarRacingGame.Designer.cs">
+      <DependentUpon>CarRacingGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="DrawingApp.cs">
       <SubType>Form</SubType>
     </Compile>
