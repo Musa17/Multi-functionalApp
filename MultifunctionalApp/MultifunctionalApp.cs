@@ -19,30 +19,30 @@ namespace MultifunctionalApp
 
         private void musicPlayerButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             MusicPlayerApp mp = new MusicPlayerApp();
             mp.Show();
+            this.Hide();
         }
 
         private void drawingAppButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             DrawingApp mp = new DrawingApp();
             mp.Show();
+            this.Hide();
         }
 
         private void carRacingGameButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             CarRacingGame mp = new CarRacingGame();
             mp.Show();
+            this.Hide();
         }
 
         private void digitalClockButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             DigitalClock mp = new DigitalClock();
             mp.Show();
+            this.Hide();
         }
     }
 }
